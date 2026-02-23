@@ -268,13 +268,11 @@
     </div>
 
     <script>
-        // 根据当前页面 URL 动态生成 Source URL
-        var baseURL = window.location.href.replace(/\/[^/]*$/, '');
-        var sourceURL = baseURL + '/apps.json';
+        var sourceURL = 'https://woju-store.kealdish.workers.dev/apps.json';
 
         document.getElementById('source-url').textContent = sourceURL;
-        document.getElementById('btn-altstore').href = 'altstore://source?url=' + encodeURIComponent(sourceURL);
-        document.getElementById('btn-sidestore').href = 'sidestore://source?url=' + encodeURIComponent(sourceURL);
+        document.getElementById('btn-altstore').href = 'altstore://source?url=' + sourceURL;
+        document.getElementById('btn-sidestore').href = 'sidestore://source?url=' + sourceURL;
 
         function copyURL() {
             var btn = document.querySelector('.btn-copy');

@@ -1,11 +1,11 @@
 {
   "name": "Woju Source",
   "identifier": "com.homie.woju.source",
-  "sourceURL": "https://kealdishx.github.io/woju-store/apps.json",
+  "sourceURL": "https://woju-store.kealdish.workers.dev/apps.json",
   "subtitle": "Woju 提醒事项应用发布源",
   "description": "Woju - 简洁优雅的提醒事项管理应用",
-  "iconURL": "https://kealdishx.github.io/woju-store/icons/icon-512.png",
-  "headerURL": "https://kealdishx.github.io/woju-store/icons/icon-1024.png",
+  "iconURL": "https://woju-store.kealdish.workers.dev/icons/icon-512.png",
+  "headerURL": "https://woju-store.kealdish.workers.dev/icons/icon-1024.png",
   "website": "https://github.com/kealdishx/woju",
   "tintColor": "#007AFF",
   "featuredApps": [
@@ -18,7 +18,7 @@
       "developerName": "Kealdish",
       "subtitle": "简洁的提醒事项应用",
       "localizedDescription": "Woju 是一款简洁优雅的提醒事项管理应用，帮助你轻松管理日常待办事项。\n\n主要功能：\n- 快速创建提醒事项\n- 灵活的时间和日期设置\n- 本地推送通知提醒\n- 支持多种重复模式（每天、工作日、周末、每周）\n- 完成状态管理\n- 多种列表视图（今天、计划、完成）\n- 简洁直观的界面设计\n- 支持 Light/Dark Mode 自动切换",
-      "iconURL": "https://kealdishx.github.io/woju-store/icons/icon-512.png",
+      "iconURL": "https://woju-store.kealdish.workers.dev/icons/icon-512.png",
       "tintColor": "#007AFF",
       "category": "utilities",
       "versions": [
@@ -26,7 +26,7 @@
           "version": "1.0",
           "date": "2026-02-02",
           "localizedDescription": "首次发布\n\n核心功能：\n- 提醒事项的创建、编辑和删除\n- 灵活的时间和日期设置\n- 本地通知推送\n- 多种重复模式支持\n- 今天/计划/完成列表视图\n- 提醒事项详情页\n- 侧滑返回手势\n- Light/Dark Mode 自动切换",
-          "downloadURL": "https://kealdishx.github.io/woju-store/ipa/woju-1.0.ipa",
+          "downloadURL": "https://woju-store.kealdish.workers.dev/ipa/woju-1.0.ipa",
           "size": 10645874,
           "minOSVersion": "18.0"
         }
