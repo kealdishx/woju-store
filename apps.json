@@ -1,11 +1,11 @@
 {
   "name": "Woju Source",
   "identifier": "com.homie.woju.source",
-  "sourceURL": "https://woju-store.pages.dev/apps.json",
+  "sourceURL": "https://store.woju.uk/apps.json",
   "subtitle": "Woju 居居一家的爱心小窝",
   "description": "Woju - 居居一家的爱心小窝",
-  "iconURL": "https://woju-store.pages.dev/icons/icon-512.png",
-  "headerURL": "https://woju-store.pages.dev/icons/icon-1024.png",
+  "iconURL": "https://store.woju.uk/icons/icon-512.png",
+  "headerURL": "https://store.woju.uk/icons/icon-1024.png",
   "website": "https://github.com/kealdishx/woju",
   "tintColor": "#007AFF",
   "featuredApps": [
@@ -18,7 +18,7 @@
       "developerName": "Kealdish",
       "subtitle": "居居一家的爱心小窝",
       "localizedDescription": "居居一家的爱心小窝",
-      "iconURL": "https://woju-store.pages.dev/icons/icon-512.png",
+      "iconURL": "https://store.woju.uk/icons/icon-512.png",
       "tintColor": "#007AFF",
       "category": "utilities",
       "versions": [
@@ -26,7 +26,7 @@
           "version": "1.0",
           "date": "2026-02-02",
           "localizedDescription": "首次发布\n\n核心功能：\n- 提醒事项的创建、编辑和删除\n- 灵活的时间和日期设置\n- 本地通知推送\n- 多种重复模式支持\n- 今天/计划/完成列表视图\n- 提醒事项详情页\n- 侧滑返回手势\n- Light/Dark Mode 自动切换",
-          "downloadURL": "https://woju-store.pages.dev/ipa/woju-1.0.ipa",
+          "downloadURL": "https://store.woju.uk/ipa/woju-1.0.ipa",
           "size": 10645874,
           "minOSVersion": "18.0"
         }
