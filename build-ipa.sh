@@ -19,18 +19,18 @@ EXPORT_OPTIONS="./ExportOptions.plist"
 
 # 检查项目是否存在
 if [ ! -d "$PROJECT_PATH" ]; then
-    echo "❌ 找不到项目文件: $PROJECT_PATH"
+    echo "找不到项目文件: $PROJECT_PATH"
     exit 1
 fi
 
 # 清理旧的构建
-echo "🧹 清理旧的构建文件..."
+echo "清理旧的构建文件..."
 rm -rf ./build
 mkdir -p ./build
 mkdir -p "$EXPORT_PATH"
 
 # 获取版本信息
-echo "📊 获取项目信息..."
+echo "获取项目信息..."
 VERSION=$(xcodebuild -showBuildSettings -project "$PROJECT_PATH" -scheme "$SCHEME" 2>/dev/null | grep MARKETING_VERSION | awk '{print $3}' | head -1)
 BUILD=$(xcodebuild -showBuildSettings -project "$PROJECT_PATH" -scheme "$SCHEME" 2>/dev/null | grep CURRENT_PROJECT_VERSION | awk '{print $3}' | head -1)
 BUNDLE_ID=$(xcodebuild -showBuildSettings -project "$PROJECT_PATH" -scheme "$SCHEME" 2>/dev/null | grep PRODUCT_BUNDLE_IDENTIFIER | awk '{print $3}' | head -1)
@@ -44,12 +44,12 @@ echo ""
 read -p "是否继续构建？(y/n) " -n 1 -r
 echo ""
 if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-    echo "❌ 已取消"
+    echo "已取消"
     exit 1
 fi
 
 # Archive
-echo "📦 开始 Archive..."
+echo "开始 Archive..."
 xcodebuild archive \
     -project "$PROJECT_PATH" \
     -scheme "$SCHEME" \
@@ -64,15 +64,15 @@ xcodebuild archive \
     -destination "generic/platform=iOS"
 
 if [ ! -d "$ARCHIVE_PATH" ]; then
-    echo "❌ Archive 失败"
+    echo "Archive 失败"
     exit 1
 fi
 
-echo "✅ Archive 完成"
+echo "Archive 完成"
 echo ""
 
 # Export IPA
-echo "📤 导出 IPA..."
+echo "导出 IPA..."
 xcodebuild -exportArchive \
     -archivePath "$ARCHIVE_PATH" \
     -exportPath "$EXPORT_PATH" \
@@ -86,7 +86,7 @@ xcodebuild -exportArchive \
 IPA_FILE=$(find "$EXPORT_PATH" -name "*.ipa" -type f | head -1)
 
 if [ -z "$IPA_FILE" ]; then
-    echo "❌ 导出 IPA 失败"
+    echo "导出 IPA 失败"
     exit 1
 fi
 
@@ -94,7 +94,7 @@ fi
 NEW_IPA_NAME="woju-${VERSION}.ipa"
 mv "$IPA_FILE" "$EXPORT_PATH/$NEW_IPA_NAME"
 
-echo "✅ IPA 导出完成"
+echo "IPA 导出完成"
 echo ""
 
 # 获取文件信息
@@ -105,11 +105,9 @@ echo "======================================"
 echo "  构建成功！"
 echo "======================================"
 echo ""
-echo "📱 IPA 文件: $EXPORT_PATH/$NEW_IPA_NAME"
-echo "📊 文件大小: $FILE_SIZE_MB MB ($FILE_SIZE 字节)"
+echo "IPA 文件: $EXPORT_PATH/$NEW_IPA_NAME"
+echo "文件大小: $FILE_SIZE_MB MB ($FILE_SIZE 字节)"
 echo ""
 echo "下一步："
-echo "1. 在 apps.json 中更新版本信息"
-echo "2. 运行 ./update-version.sh 获取配置模板"
-echo "3. 推送到 GitHub"
+echo "  ./update-version.sh"
 echo ""

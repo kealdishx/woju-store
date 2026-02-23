@@ -10,7 +10,7 @@
         - enterprise: 企业分发
     -->
     <key>method</key>
-    <string>ad-hoc</string>
+    <string>development</string>
 
     <!-- 自动管理签名 -->
     <key>signingStyle</key>

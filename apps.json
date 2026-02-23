@@ -1,11 +1,12 @@
 {
   "name": "Woju Source",
   "identifier": "com.homie.woju.source",
-  "subtitle": "提醒事项应用发布源",
+  "sourceURL": "https://kealdishx.github.io/woju-store/apps.json",
+  "subtitle": "Woju 提醒事项应用发布源",
   "description": "Woju - 简洁优雅的提醒事项管理应用",
-  "iconURL": "https://your-github-username.github.io/woju-altstore/icons/source-icon.png",
-  "headerURL": "https://your-github-username.github.io/woju-altstore/icons/header.png",
-  "website": "https://github.com/your-github-username/woju",
+  "iconURL": "https://kealdishx.github.io/woju-store/icons/icon-512.png",
+  "headerURL": "https://kealdishx.github.io/woju-store/icons/icon-1024.png",
+  "website": "https://github.com/kealdishx/woju",
   "tintColor": "#007AFF",
   "featuredApps": [
     "com.homie.woju"
@@ -16,78 +17,39 @@
       "bundleIdentifier": "com.homie.woju",
       "developerName": "Kealdish",
       "subtitle": "简洁的提醒事项应用",
-      "localizedDescription": "Woju 是一款简洁优雅的提醒事项管理应用，帮助你轻松管理日常待办事项。\n\n主要功能：\n• 📝 快速创建提醒事项\n• 📅 灵活的时间和日期设置\n• 🔔 本地推送通知提醒\n• 🔄 支持多种重复模式（每天、工作日、周末、每周）\n• ✅ 完成状态管理\n• 📋 多种列表视图（今天、计划、完成）\n• 🎯 简洁直观的界面设计\n\n完美适用于：\n✓ 日常任务管理\n✓ 工作待办清单\n✓ 生活提醒事项\n✓ 学习计划安排",
-      "iconURL": "https://your-github-username.github.io/woju-altstore/icons/woju-icon.png",
+      "localizedDescription": "Woju 是一款简洁优雅的提醒事项管理应用，帮助你轻松管理日常待办事项。\n\n主要功能：\n- 快速创建提醒事项\n- 灵活的时间和日期设置\n- 本地推送通知提醒\n- 支持多种重复模式（每天、工作日、周末、每周）\n- 完成状态管理\n- 多种列表视图（今天、计划、完成）\n- 简洁直观的界面设计\n- 支持 Light/Dark Mode 自动切换",
+      "iconURL": "https://kealdishx.github.io/woju-store/icons/icon-512.png",
       "tintColor": "#007AFF",
       "category": "utilities",
-      "screenshots": [
-        {
-          "imageURL": "https://your-github-username.github.io/woju-altstore/screenshots/screen-1.png",
-          "width": 1170,
-          "height": 2532
-        },
-        {
-          "imageURL": "https://your-github-username.github.io/woju-altstore/screenshots/screen-2.png",
-          "width": 1170,
-          "height": 2532
-        },
-        {
-          "imageURL": "https://your-github-username.github.io/woju-altstore/screenshots/screen-3.png",
-          "width": 1170,
-          "height": 2532
-        },
-        {
-          "imageURL": "https://your-github-username.github.io/woju-altstore/screenshots/screen-4.png",
-          "width": 1170,
-          "height": 2532
-        }
-      ],
       "versions": [
         {
           "version": "1.0",
           "date": "2026-02-02",
-          "localizedDescription": "🎉 首次发布\n\n✨ 核心功能：\n• 提醒事项的创建、编辑和删除\n• 灵活的时间和日期设置\n• 本地通知推送\n• 多种重复模式支持\n• 今天/计划/完成列表视图\n• 提醒事项详情页\n\n🛠️ 技术特性：\n• 使用 SwiftUI 构建现代化界面\n• 集成 UserNotifications 框架\n• 本地数据持久化存储\n• 支持 iOS 18.0 及以上版本",
-          "downloadURL": "https://your-github-username.github.io/woju-altstore/ipa/woju-1.0.ipa",
-          "size": 5242880,
+          "localizedDescription": "首次发布\n\n核心功能：\n- 提醒事项的创建、编辑和删除\n- 灵活的时间和日期设置\n- 本地通知推送\n- 多种重复模式支持\n- 今天/计划/完成列表视图\n- 提醒事项详情页\n- 侧滑返回手势\n- Light/Dark Mode 自动切换",
+          "downloadURL": "https://kealdishx.github.io/woju-store/ipa/woju-1.0.ipa",
+          "size": 10645874,
           "minOSVersion": "18.0"
         }
       ],
       "appPermissions": {
         "entitlements": [
-          {
-            "name": "com.apple.security.application-groups"
-          }
+          "com.apple.security.application-groups"
         ],
-        "privacy": [
-          {
-            "name": "Notifications",
-            "usageDescription": "Woju 需要通知权限来在设定的时间提醒你完成事项"
-          },
-          {
-            "name": "UserDefaults",
-            "usageDescription": "用于本地存储你的提醒事项数据"
-          }
-        ]
+        "privacy": {
+          "NSUserNotificationsUsageDescription": "Woju 需要通知权限来在设定的时间提醒你完成事项"
+        }
       }
     }
   ],
   "news": [
     {
-      "title": "欢迎使用 Woju！",
-      "identifier": "woju-welcome",
-      "caption": "Woju 1.0 正式发布",
+      "title": "Woju 1.0 正式发布",
+      "identifier": "woju-release-1.0",
+      "caption": "简洁优雅的提醒事项管理应用现已上线",
       "date": "2026-02-02",
       "tintColor": "#007AFF",
-      "imageURL": "https://your-github-username.github.io/woju-altstore/news/welcome.png",
       "notify": true,
-      "url": "https://github.com/your-github-username/woju"
+      "appID": "com.homie.woju"
     }
-  ],
-  "userInfo": {
-    "version": "1.0",
-    "lastUpdated": "2026-02-02",
-    "author": "Kealdish",
-    "contact": "your-email@example.com",
-    "repository": "https://github.com/your-github-username/woju"
-  }
+  ]
 }
