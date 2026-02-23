@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Woju - 安装指南</title>
+    <title>窝居 - 安装指南</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -32,12 +32,13 @@
             width: 80px;
             height: 80px;
             border-radius: 18px;
-            background: linear-gradient(135deg, #007AFF, #5856D6);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            overflow: hidden;
             margin: 0 auto 16px;
-            font-size: 36px;
+        }
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         .header h1 {
             font-size: 28px;
@@ -154,26 +155,7 @@
             text-decoration: none;
         }
         .guide a:hover { text-decoration: underline; }
-        .vs-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 13px;
-            margin-top: 12px;
-        }
-        .vs-table th {
-            text-align: left;
-            padding: 8px 10px;
-            background: #F0F0F2;
-            font-weight: 600;
-            border-radius: 6px;
-        }
-        .vs-table td {
-            padding: 8px 10px;
-            border-bottom: 1px solid #F0F0F2;
-            color: #555;
-        }
-        .vs-table tr:last-child td { border-bottom: none; }
-        .footer {
+.footer {
             text-align: center;
             margin-top: 24px;
             font-size: 12px;
@@ -185,9 +167,9 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="app-icon">W</div>
-            <h1>Woju</h1>
-            <p>简洁优雅的提醒事项管理应用</p>
+            <div class="app-icon"><img src="icons/icon-512.png" alt="窝居"></div>
+            <h1>窝居</h1>
+            <p>居居的爱心制作</p>
         </div>
 
         <!-- 一键安装 -->
@@ -210,60 +192,28 @@
             </div>
         </div>
 
-        <!-- 对比说明 -->
+        <!-- SideStore 续签指引 -->
         <div class="section">
-            <div class="section-title">AltStore vs SideStore</div>
-            <table class="vs-table">
-                <tr>
-                    <th></th>
-                    <th>AltStore</th>
-                    <th>SideStore</th>
-                </tr>
-                <tr>
-                    <td>续签方式</td>
-                    <td>需要电脑</td>
-                    <td>设备端自动</td>
-                </tr>
-                <tr>
-                    <td>需要 WiFi 同网</td>
-                    <td>是</td>
-                    <td>否</td>
-                </tr>
-                <tr>
-                    <td>WireGuard VPN</td>
-                    <td>不需要</td>
-                    <td>需要开启</td>
-                </tr>
-                <tr>
-                    <td>免费 ID 有效期</td>
-                    <td>7 天</td>
-                    <td>7 天 (自动续)</td>
-                </tr>
-            </table>
-        </div>
-
-        <!-- SideStore 自动续期指引 -->
-        <div class="section">
-            <div class="section-title">SideStore 自动续签配置</div>
+            <div class="section-title">续签说明</div>
             <div class="guide">
                 <h3>首次设置</h3>
                 <ol>
                     <li>安装 <a href="https://sidestore.io/" target="_blank" rel="noopener">SideStore</a> 到你的设备</li>
-                    <li>在 App Store 安装 <strong>WireGuard</strong> VPN 客户端</li>
-                    <li>打开 SideStore，进入设置，按照提示配置 WireGuard 回环 VPN</li>
-                    <li>启用 WireGuard VPN 后，SideStore 即可在设备端自动续签</li>
+                    <li>在 App Store 安装 <strong>LocalDevVPN</strong></li>
+                    <li>打开 LocalDevVPN 并连接</li>
+                    <li>打开 SideStore，登录 Apple ID 即可使用</li>
                 </ol>
-                <h3 style="margin-top: 16px;">日常使用</h3>
+                <h3 style="margin-top: 16px;">日常续签</h3>
                 <ol>
-                    <li>保持 WireGuard VPN 开启</li>
-                    <li>SideStore 会在后台自动续签应用（到期前 1-2 天）</li>
-                    <li>也可手动打开 SideStore 点击刷新来立即续签</li>
+                    <li>打开 LocalDevVPN 连接</li>
+                    <li>打开 SideStore 点击刷新</li>
+                    <li>刷新完成后可关闭 LocalDevVPN</li>
                 </ol>
             </div>
         </div>
 
         <div class="footer">
-            <p>Woju · <a href="https://github.com/kealdishx/woju" target="_blank" rel="noopener">GitHub</a></p>
+            <p>窝居 · <a href="https://github.com/kealdishx/woju" target="_blank" rel="noopener">GitHub</a></p>
         </div>
     </div>
 
