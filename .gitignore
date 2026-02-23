@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# IDE
+.vscode/
+.idea/
+
+# 如果 IPA 文件太大，可以考虑使用 Git LFS 或不提交到仓库
+# ipa/*.ipa
+usage

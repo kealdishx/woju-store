@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!--
+        导出方法:
+        - development: 开发版本
+        - ad-hoc: Ad Hoc 分发（推荐用于 AltStore）
+        - app-store: App Store 分发
+        - enterprise: 企业分发
+    -->
+    <key>method</key>
+    <string>ad-hoc</string>
+
+    <!-- 自动管理签名 -->
+    <key>signingStyle</key>
+    <string>automatic</string>
+
+    <!-- 团队 ID (如果有多个团队，需要指定) -->
+    <!--
+    <key>teamID</key>
+    <string>YOUR_TEAM_ID</string>
+    -->
+
+    <!-- 上传符号文件（可选） -->
+    <key>uploadSymbols</key>
+    <true/>
+
+    <!-- 编译 Bitcode（iOS 已弃用，设为 false） -->
+    <key>compileBitcode</key>
+    <false/>
+
+    <!-- 应用瘦身（可选） -->
+    <!--
+    <key>thinning</key>
+    <string>&lt;none&gt;</string>
+    -->
+
+    <!-- 导出选项 -->
+    <key>destination</key>
+    <string>export</string>
+</dict>
+</plist>
