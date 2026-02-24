@@ -23,6 +23,14 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "1.1.0",
+          "date": "2026-02-24",
+          "localizedDescription": "bug 修复和性能优化\\n\\n改进内容：\\n- 修复已知问题\\n- 优化应用性能\\n- 提升用户体验",
+          "downloadURL": "https://store.woju.uk/ipa/woju-1.1.0.ipa",
+          "size": 10646487,
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "1.0",
           "date": "2026-02-02",
           "localizedDescription": "首次发布\n\n核心功能：\n- 提醒事项的创建、编辑和删除\n- 灵活的时间和日期设置\n- 本地通知推送\n- 多种重复模式支持\n- 今天/计划/完成列表视图\n- 提醒事项详情页\n- 侧滑返回手势\n- Light/Dark Mode 自动切换",
@@ -42,6 +50,15 @@
     }
   ],
   "news": [
+    {
+      "title": "Woju 1.1.0 发布",
+      "identifier": "woju-release-1.1.0",
+      "caption": "bug 修复和性能优化",
+      "date": "2026-02-24",
+      "tintColor": "#007AFF",
+      "notify": true,
+      "appID": "com.homie.woju"
+    },
     {
       "title": "Woju 1.0 正式发布",
       "identifier": "woju-release-1.0",
