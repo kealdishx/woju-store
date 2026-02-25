@@ -23,6 +23,14 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "1.1.1",
+          "date": "2026-02-25",
+          "localizedDescription": "修复提醒事项重复功能异常问题\\n\\n改进内容：\\n- 修复重复提醒功能的异常\\n- 提升应用稳定性",
+          "downloadURL": "https://store.woju.uk/ipa/woju-1.1.1.ipa",
+          "size": 10647547,
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "1.1.0",
           "date": "2026-02-24",
           "localizedDescription": "bug 修复和性能优化\\n\\n改进内容：\\n- 修复已知问题\\n- 优化应用性能\\n- 提升用户体验",
@@ -50,6 +58,15 @@
     }
   ],
   "news": [
+    {
+      "title": "Woju 1.1.1 发布",
+      "identifier": "woju-release-1.1.1",
+      "caption": "修复提醒事项重复功能异常问题",
+      "date": "2026-02-25",
+      "tintColor": "#007AFF",
+      "notify": true,
+      "appID": "com.homie.woju"
+    },
     {
       "title": "Woju 1.1.0 发布",
       "identifier": "woju-release-1.1.0",
